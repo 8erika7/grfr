@@ -1,6 +1,6 @@
 class FreegrafferController < ApplicationController
   def index
-    @freegraffers = freegraffer.all
+    @freegraffers = Freegraffer.all
   end
 
   def show
