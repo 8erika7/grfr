@@ -1,4 +1,4 @@
-class FreegrafferController < ApplicationController
+class FreegraffersController < ApplicationController
   def index
     @freegraffers = Freegraffer.all
   end
@@ -12,7 +12,7 @@ class FreegrafferController < ApplicationController
   end
 
   def create
-    @freegraffers = Freegraffers.new(freegraffers_params)
+    @freegraffers = Freegraffer.new(freegraffers_params)
   end
 
   private
