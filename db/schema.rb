@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_16_192343) do
+ActiveRecord::Schema.define(version: 2020_01_16_210333) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_192343) do
     t.index ["user_id"], name: "index_booking_infos_on_user_id"
   end
 
-  create_table "freegraphers", force: :cascade do |t|
+  create_table "freegraffers", force: :cascade do |t|
     t.string "description"
     t.string "style"
     t.integer "price"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_192343) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_freegraphers_on_user_id"
+    t.index ["user_id"], name: "index_freegraffers_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_192343) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "booking_infos", "freegraphers"
+  add_foreign_key "booking_infos", "freegraffers", column: "freegrapher_id"
   add_foreign_key "booking_infos", "users"
-  add_foreign_key "freegraphers", "users"
+  add_foreign_key "freegraffers", "users"
 end
