@@ -1,18 +1,18 @@
 class FreegrafferController < ApplicationController
   def index
-    @freegraffers = freegraffer.all
+    @freegraffers = Freegraffer.all
   end
 
   def show
-    @freegraffers = freegraffer.find(params[:id])
+    @freegraffers = Freegraffer.find(params[:id])
   end
 
   def new
-    @freegraffers = freegraffer.new
+    @freegraffers = Freegraffer.new
   end
 
   def create
-    @freegraffers = freegraffers.new(freegraffers_params)
+    @freegraffers = Freegraffers.new(freegraffers_params)
   end
 
   private
