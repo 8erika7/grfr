@@ -15,6 +15,10 @@ class FreegraffersController < ApplicationController
     @freegraffers = Freegraffer.new(freegraffers_params)
   end
 
+  def top
+    @freegraffers = Freegraffer.where(stars: 5)
+  end
+
   private
 
   def freegraffer_params
