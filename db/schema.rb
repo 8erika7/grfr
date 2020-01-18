@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_16_210333) do
+ActiveRecord::Schema.define(version: 2020_01_18_132520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,8 +42,8 @@ ActiveRecord::Schema.define(version: 2020_01_16_210333) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.bigint "freegrapher_id"
-    t.index ["freegrapher_id"], name: "index_booking_infos_on_freegrapher_id"
+    t.bigint "freegraffer_id"
+    t.index ["freegraffer_id"], name: "index_booking_infos_on_freegraffer_id"
     t.index ["user_id"], name: "index_booking_infos_on_user_id"
   end
 
@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 2020_01_16_210333) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "stars"
+    t.string "photo"
     t.index ["user_id"], name: "index_freegraffers_on_user_id"
   end
 
@@ -72,7 +74,7 @@ ActiveRecord::Schema.define(version: 2020_01_16_210333) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "booking_infos", "freegraffers", column: "freegrapher_id"
+  add_foreign_key "booking_infos", "freegraffers"
   add_foreign_key "booking_infos", "users"
   add_foreign_key "freegraffers", "users"
 end
