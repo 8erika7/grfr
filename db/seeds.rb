@@ -25,7 +25,7 @@ freegraffer_1.save
 # file2 = File.open(File.join(Rails.root, 'app/assets/images/lenomdemonimage.jpg'))
 
 
-freegraffer_2 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
+freegraffer_2 = Freegraffer.new(description: 'Tim', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_2.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_un.jpg'))
@@ -33,7 +33,7 @@ freegraffer_2.photo.attach(io: file, filename: 'nes.png', content_type: 'image/p
 
 freegraffer_2.save
 
-freegraffer_3 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
+freegraffer_3 = Freegraffer.new(description: 'Dj Pink Jelly', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_3.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_deux.jpg'))
@@ -41,7 +41,7 @@ freegraffer_3.photo.attach(io: file, filename: 'nes.png', content_type: 'image/p
 
 freegraffer_3.save
 
-freegraffer_4 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
+freegraffer_4 = Freegraffer.new(description: 'Terrence evans', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_4.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_trois.jpg'))
@@ -49,7 +49,7 @@ freegraffer_4.photo.attach(io: file, filename: 'nes.png', content_type: 'image/p
 
 freegraffer_4.save
 
-freegraffer_5 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
+freegraffer_5 = Freegraffer.new(description: 'Zoro lasticot', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_5.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_quatre.jpg'))
@@ -58,7 +58,7 @@ freegraffer_5.photo.attach(io: file, filename: 'nes.png', content_type: 'image/p
 freegraffer_5.save
 
 
-freegraffer_6 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
+freegraffer_6 = Freegraffer.new(description: 'Banksy', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_6.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_cinq.jpg'))

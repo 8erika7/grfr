@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
   background-color:
@@ -83,3 +83,11 @@ body {
 .navbar-lewagon .navbar-brand img {
   width: 80px;
 }
+
+.home-header {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 60px;
+  font-family: Chalkduster;
+  color: white;
+  }
