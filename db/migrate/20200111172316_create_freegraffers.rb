@@ -1,6 +1,6 @@
-class CreateFreegraphers < ActiveRecord::Migration[5.2]
+class CreateFreegraffers < ActiveRecord::Migration[5.2]
   def change
-    create_table :freegraphers do |t|
+    create_table :freegraffers do |t|
       t.string :description
       t.string :style
       t.integer :price

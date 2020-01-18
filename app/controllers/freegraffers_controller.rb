@@ -4,7 +4,9 @@ class FreegraffersController < ApplicationController
   end
 
   def show
-    @freegraffers = Freegraffer.find(params[:id])
+
+    @photos = ["https://files.slack.com/files-pri/T02NE0241-FSU6SASBS/keith.jpg", ]
+    @freegraffer = Freegraffer.find(params[:id])
   end
 
   def new
@@ -24,4 +26,6 @@ class FreegraffersController < ApplicationController
   def freegraffer_params
     params.require(:freegraffers).permit(:name, :style, :price, :disponibility)
   end
+
+
 end
