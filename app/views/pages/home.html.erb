@@ -1,7 +1,8 @@
 <body>
-
+<h1  class="home-header">Top Graffers Of The Month</h1>
 <div class="cards">
-<%= @freegraffers.first(6).each do |f| %>
+<% @freegraffers.each do |f| %>
+
   <%= link_to freegraffer_path(f) do %>
   <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("<%= f.photo %>")">
     <%= f.description %>
