@@ -1,2 +1,7 @@
-<h1>Freegraphers#show</h1>
-<p>Find me in app/views/freegraphers/show.html.erb</p>
+<h1><%= @freegraffer.description %></h1>
+
+<!--  <div class="banner" style=" width: 100px; height: 100px; background-image: url('<%#=@freegraffer.photo%>')";>
+</div> -->
+
+<%= cl_image_tag @freegraffer.photo.key, alt: "alttext" %>
+
