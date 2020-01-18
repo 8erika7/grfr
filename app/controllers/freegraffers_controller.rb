@@ -4,6 +4,7 @@ class FreegraffersController < ApplicationController
   end
 
   def show
+
     @photos = ["https://files.slack.com/files-pri/T02NE0241-FSU6SASBS/keith.jpg", ]
     @freegraffer = Freegraffer.find(params[:id])
   end
