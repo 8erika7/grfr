@@ -16,7 +16,7 @@ class FreegraffersController < ApplicationController
   end
 
   def top
-    @restaurants = Freegraffer.where(stars: 5)
+    @freegraffers = Freegraffer.where(stars: 5)
   end
 
   private

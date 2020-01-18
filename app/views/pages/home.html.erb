@@ -1,11 +1,12 @@
 <body>
 
-
-
 <div class="cards">
+<%= @freegraffers.each do |f| %>
+  <%= link_to freegraffer_path(f) do %>
   <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
     Breakfast
   </div>
+ <% end %>
 
   <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
     Lunch
@@ -25,6 +26,8 @@
   <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
     Dinner
   </div>
+  <% end %>
+
 </div>
 
 </body>
