@@ -4,7 +4,7 @@ class FreegraffersController < ApplicationController
   end
 
   def show
-    @freegraffers = Freegraffer.find(params[:id])
+    @freegraffer = Freegraffer.find(params[:id])
   end
 
   def new
