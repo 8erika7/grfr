@@ -1,4 +1,23 @@
 
+<div class="container">
+  <h1> Crazy P_ </h1>
+  <h3>Réalisation de graffe'</h3>
+  <p id=Loca> Paris, France </p>
+  <img class="img-profil" id=PixProfil src="<%= @freegraffer.photo %>" alt="">
+    <div id=Prix>
+      <br/> Tarifs : <%= @freegraffer.price %> £ / day </p>
+      <div class="btn">
+      <a href="https://www.lewagon.com/fr" target="_blank" id=button class="btn"> Book me!</a>
+      </div>
+    </div>
+</div>
+  <div id=GT class="container">
+    <h3>Graph styles</h3>
+    <li>Tag</li>
+    <li>Street View</li>
+    <li>Graffiti</li>
+  </div>
+
 <h1><%= @freegraffer.description %></h1>
 
 <!--  <div class="banner" style=" width: 100px; height: 100px; background-image: url('<%#=@freegraffer.photo%>')";>
@@ -6,6 +25,7 @@
 
 <%= cl_image_tag @freegraffer.photo.key, alt: "alttext" %>
 <div><%= @freegraffer.description %></div>
+
 
         <div class="container">
           <div class="footer">
