@@ -1,32 +1,12 @@
+
+<h1><%= @freegraffer.description %></h1>
+
+<!--  <div class="banner" style=" width: 100px; height: 100px; background-image: url('<%#=@freegraffer.photo%>')";>
+</div> -->
+
+<%= cl_image_tag @freegraffer.photo.key, alt: "alttext" %>
 <div><%= @freegraffer.description %></div>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title> _Profil_Grfr_0.1 </title>
-  </head>
-  <body>
-    <%= yield %>
-    <div class="container">
-      <h1> Grf'One_ </h1>
-      <h3>Réalisation de graph'</h3>
-      <p> Paris, France </p>
-      <img class="img-profil" id=PixProfil src="<%= freegraffer.photo %>" alt="">
-        <div>
-
-          <br/> Tarifs : <%= freegraffer.price %> £ / day </p>
-          <div class="btn">
-          <a href="https://www.lewagon.com/fr" target="_blank" class=" btn-discovery"> BOOK ME NOW </a>
-          </div>
-        </div>
-    </div>
-      <div class="container"><
-        <h3>Graph Styles</h3>
-
-      </div>
-
-        <br/>
         <div class="container">
           <div class="footer">
             <h4> Other Pages </h4>
@@ -43,6 +23,5 @@
         </div>
   </body>
 </html>
-
 
 
