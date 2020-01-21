@@ -1,15 +1,11 @@
-<body>
 <h1  class="home-header">Top Graffers Of The Month</h1>
 <div class="cards">
 <% @freegraffers.each do |f| %>
 
   <%= link_to freegraffer_path(f) do %>
-  <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("<%= f.photo %>")">
-    <%= f.description %>
-  </div>
- <% end %>
- <% end %>
-
+    <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= rails_blob_url(f.photo)  %>)">
+     <p style="text-shadow: 3px 3px 3px black"> <%= f.description %> </p>
+    </div>
+  <% end %>
+<% end %>
 </div>
-
-</body>
