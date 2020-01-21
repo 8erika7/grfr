@@ -1,2 +1,10 @@
-<h1>Freegraphers#new</h1>
-<p>Find me in app/views/freegraphers/new.html.erb</p>
+
+<%= simple_form_for(@freegraffer) do |f| %>
+  <%= f.input :description %>
+  <%= f.input :style %>
+  <%= f.input :price %>
+  <%= f.input :disponibility %>
+  <%= f.input :photo, as: :file, input_html: { multiple: true }%>
+  <%= f.submit "add a freegraffer ", class: "btn btn-primary" %>
+<% end %>
+

@@ -4,17 +4,16 @@ class FreegraffersController < ApplicationController
   end
 
   def show
-
     @photos = ["https://files.slack.com/files-pri/T02NE0241-FSU6SASBS/keith.jpg", ]
     @freegraffer = Freegraffer.find(params[:id])
   end
 
   def new
-    @freegraffers = Freegraffer.new
+    @freegraffer = Freegraffer.new
   end
 
   def create
-    @freegraffers = Freegraffer.new(freegraffers_params)
+    @freegraffer = Freegraffer.new(freegraffers_params)
   end
 
   def top
@@ -24,8 +23,6 @@ class FreegraffersController < ApplicationController
   private
 
   def freegraffer_params
-    params.require(:freegraffers).permit(:name, :style, :price, :disponibility)
+    params.require(:freegraffers).permit(:name, :style, :price, :disponibility, photos: [])
   end
-
-
 end
