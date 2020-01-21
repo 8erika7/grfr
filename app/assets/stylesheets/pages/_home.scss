@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  margin-top: 100px;
+  margin-top: 55px;
   margin-left: 50px;
   margin-right: 50px;
   background-color:
@@ -91,3 +91,8 @@ body {
   font-family: Chalkduster;
   color: white;
   }
+
+.home-header {
+  text-shadow: 3px 3px 3px black;
+  font-family: 'Permanent Marker', cursive
+}

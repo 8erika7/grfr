@@ -17,7 +17,7 @@ user_2.save
 freegraffer_1 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_1.user = User.first
 
-file = File.open(File.join(Rails.root, 'app/assets/images/el_xupet_negre.jpg'))
+file = File.open(File.join(Rails.root, 'app/assets/images/el_xupet_negre.png'))
 freegraffer_1.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_1.save
