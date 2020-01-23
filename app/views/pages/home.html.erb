@@ -3,9 +3,16 @@
 <% @freegraffers.each do |f| %>
 
   <%= link_to freegraffer_path(f) do %>
-    <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= rails_blob_url(f.photo)  %>)">
-     <p style="text-shadow: 3px 3px 3px black"> <%= f.description %> </p>
-    </div>
+   <%  if f.photo.attached? %>
+        <% card_photo_url = rails_blob_url(f.photo) %>
+       <%  else %>
+       <% card_photo_url = image_path "photo_un.jpg" %>
+      <% end %>
+
+
+      <div class="card-graf" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= card_photo_url  %>)">
+      <p style="text-shadow: 3px 3px 3px black"> <%= f.description %> </p>
+      </div>
   <% end %>
 <% end %>
 </div>

@@ -42,12 +42,12 @@
     </a>
   </div>
 </div>
+<%= cl_image_tag @freegraffer.photo.key, height: 300, width: 400, crop: :fill %>
 
 
-
-<% @freegraffer.photos.each do |photo| %>
-  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
+<%# @freegraffer.photos.each do |photo| %>
+  <%#= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+<%# end %>
 
 
 

@@ -13,7 +13,13 @@ class FreegraffersController < ApplicationController
   end
 
   def create
-    @freegraffer = Freegraffer.new(freegraffers_params)
+    @freegraffer = Freegraffer.new(freegraffer_params)
+    @freegraffer.user = current_user
+    if @freegraffer.save
+      redirect_to freegraffer_path(@freegraffer)
+    else
+      render :new
+    end
   end
 
   def top
@@ -23,6 +29,6 @@ class FreegraffersController < ApplicationController
   private
 
   def freegraffer_params
-    params.require(:freegraffers).permit(:name, :style, :price, :disponibility, photos: [])
+    params.require(:freegraffer).permit(:name, :style, :price, :disponibility, :photo)
   end
 end
