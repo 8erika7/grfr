@@ -14,11 +14,10 @@ user_1.save
 user_2 = User.new(email: 'Baby@gmail.com', password: 'hello123')
 user_2.save
 
+file = URI.open('https://res.cloudinary.com/dofat3r9t/image/upload/v1579365879/NJMKbUpxteMrnEF1XFpmsHnD.jpg')
 freegraffer_1 = Freegraffer.new(description: 'Crazy P', price: 50, disponibility: 'any month', style: 'calligrapher')
 freegraffer_1.user = User.first
-
-file = File.open(File.join(Rails.root, 'app/assets/images/el_xupet_negre.png'))
-freegraffer_1.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+freegraffer_1.photos.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_1.save
 
@@ -29,7 +28,7 @@ freegraffer_2 = Freegraffer.new(description: 'Tim', price: 50, disponibility: 'a
 freegraffer_2.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_un.jpg'))
-freegraffer_2.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+#freegraffer_2.photos.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_2.save
 
@@ -37,7 +36,7 @@ freegraffer_3 = Freegraffer.new(description: 'Dj Pink Jelly', price: 50, disponi
 freegraffer_3.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_deux.jpg'))
-freegraffer_3.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+#freegraffer_3.photos.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_3.save
 
@@ -45,7 +44,7 @@ freegraffer_4 = Freegraffer.new(description: 'Terrence evans', price: 50, dispon
 freegraffer_4.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_trois.jpg'))
-freegraffer_4.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+#freegraffer_4.photos.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_4.save
 
@@ -53,7 +52,7 @@ freegraffer_5 = Freegraffer.new(description: 'Zoro lasticot', price: 50, disponi
 freegraffer_5.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_quatre.jpg'))
-freegraffer_5.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+#freegraffer_5.photos.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_5.save
 
@@ -62,7 +61,7 @@ freegraffer_6 = Freegraffer.new(description: 'Banksy', price: 50, disponibility:
 freegraffer_6.user = User.first
 
 file = File.open(File.join(Rails.root, 'app/assets/images/photo_cinq.jpg'))
-freegraffer_6.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+#freegraffer_6.photos.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 freegraffer_6.save
 
