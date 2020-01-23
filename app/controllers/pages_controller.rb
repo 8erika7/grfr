@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-       @freegraffers = Freegraffer.all
+       @freegraffers = Freegraffer.limit(6)
   end
 end
