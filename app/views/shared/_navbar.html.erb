@@ -1,39 +1,38 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <a class="navbar-brand" href="#">
-  <%= link_to cl_image_tag("logo-grfr_x4gnmm",
-      width: 80, height: 80, crop: :fill), root_path %>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <form class="form-inline my-2 my-lg-0" >
-      <input class="form-control mr-sm-2" type="search" placeholder="Find your Graffer" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Search </button>
-    </form>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <% if !current_user %>
-        <li class="nav-item">
-          <%= link_to 'sign up', new_user_registration_path, class: 'nav-link'%>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'sign in', new_user_session_path, class: 'nav-link'%>
-        </li>
-      <% else %>
-        <li class="nav-item">
-        <%= link_to 'home', root_path, class: 'nav-link'%>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'log out', destroy_user_session_path, method: :delete, class: 'nav-link'%>
-        </li>
-      <% end %>
-      <li class="nav-item dropdown">
-      <%= cl_image_tag("image_pt51p0",
-      width: 50, height: 50, crop: :fill) %>
 
-        </div>
-      </li>
-    </ul>
-  </div>
+    <a class="navbar-brand" href="#">
+    <%= link_to cl_image_tag("logo-grfr_x4gnmm",
+        width: 80, height: 80, crop: :fill), root_path %>
+    </a>
+
+      <form class="form-inline my-2 my-lg-0 align-search" >
+        <input class="form-control mr-sm-2" type="search" placeholder="Find your Graffer" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Search </button>
+      </form>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <% if !current_user %>
+          <li class="nav-item">
+            <%= link_to 'sign up', new_user_registration_path, class: 'nav-link'%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'sign in', new_user_session_path, class: 'nav-link'%>
+          </li>
+        <% else %>
+          <li class="nav-item">
+          <%= link_to 'home', root_path, class: 'nav-link'%>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'log out', destroy_user_session_path, method: :delete, class: 'nav-link'%>
+          </li>
+        <% end %>
+        <li class="nav-item dropdown">
+        <%= cl_image_tag("image_pt51p0",
+        width: 50, height: 50, crop: :fill) %>
+        </li>
+      </ul>
+    </div>
+
 </div>
