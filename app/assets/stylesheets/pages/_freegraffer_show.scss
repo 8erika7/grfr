@@ -1,41 +1,88 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+}
+
 h1 {
 
   font-size: 50px;
   font-family: 'Permanent Marker', cursive;
   color: white;
   text-align: center;
+  margin-bottom: 50px;
 
 }
 
 h3 {
+  font-size: 22px;
+  font-family: bradley Hand;
+  color: #A9A9A9;
+  text-decoration: underline;
+
+}
+
+li {
   font-size: 18px;
   font-family: bradley Hand;
-  color: #e7e7e7;
+  color: #B0C4DE;
   text-decoration: none;
 
+
 }
+
+.flexbox {
+  box-shadow: 4px 4px 6px;
+  border-radius: 13px;
+  border: 4px solid #AFEEEE;
+  display: block;
+  text-align: center;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  justify-content: space-around;
+  li{
+    list-style: none !important;
+  }
+}
+
 
 #Loca {
-  font-size: 12px;
+  font-size: 14px;
   color: #e7e7e7;
+  font-family: OCR A Std, monospace;
+  margin-top: 30px;
 }
 
-#Prix {
+#Tar {
   font-size: 14px;
-  color: #F5F5F5;
-  text-decoration: underline
+  color: #A9A9A9;
+  text-decoration: underline;
+  font-family: Chalkduster;
+}
+
+#Money {
+  font-size: 14px;
+  color: #DAA520;
+  font-family: Chalkduster;
 }
 
 #button {
   background-color: #008CBA;
-  border-radius: 30px;
+  border-radius: 20px;
   color: white;
   padding: 7px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 5px;
+}
+
+#btn {
+  color: black;
 }
 
 h4 {
@@ -58,5 +105,8 @@ h4 {
 }
 
 .show-picture {
-  margin-top: 40px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
+
