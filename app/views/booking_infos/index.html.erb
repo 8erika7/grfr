@@ -1,8 +1,8 @@
-<p>You book some freegraffers</p>
+<h1>Your freegraffers : </h1>
 
 <% @booking_infos.each do |booking_info| %>
-<p><%= booking_info.freegraffer.description %></p>
-<p> <%= booking_info.freegraffer.style %></p>
+<p><%= booking_info.freegraffer.description %> - <%= booking_info.freegraffer.style %></p>
+
 
 <p><%= booking_info.start_date %> -<%= booking_info.end_date %>  </p>
 

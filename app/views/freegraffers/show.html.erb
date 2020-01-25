@@ -19,7 +19,11 @@
         <div id=Tar> Tarifs: </div> <div id=Money> <%=@freegraffer.price%>£ /day</div>
         <br>
         <div class="btn">
-          <%= link_to "Book me ! ",  new_freegraffer_booking_info_path(@freegraffer), id: "button", class: "btn" %>
+          <% if current_user %>
+            <%= link_to "Book me ! ",  new_freegraffer_booking_info_path(@freegraffer), id: "button", class: "btn" %>
+          <% else %>
+            <p> Please log in to book</p>
+          <% end %>
           </div>
       </div>
 
