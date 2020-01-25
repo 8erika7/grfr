@@ -1,0 +1,11 @@
+<p>You book some freegraffers</p>
+
+<%= @booking_infos.to_a %>
+
+<% unless @booking_freelances.empty? %>
+
+  <p>You have been booked for </p>
+
+  <%= @booking_freelances.to_a %>
+
+<% end %>
