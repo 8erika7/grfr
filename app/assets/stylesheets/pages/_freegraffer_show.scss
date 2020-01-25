@@ -11,30 +11,31 @@ h1 {
   font-family: 'Permanent Marker', cursive;
   color: white;
   text-align: center;
+  margin-bottom: 50px;
 
 }
 
 h3 {
   font-size: 22px;
   font-family: bradley Hand;
-  color: #e7e7e7;
-  text-decoration: none;
+  color: #A9A9A9;
+  text-decoration: underline;
 
 }
 
 li {
-  font-size: 22px;
+  font-size: 18px;
   font-family: bradley Hand;
-  color: #6495ED;
+  color: #B0C4DE;
   text-decoration: none;
 
 
 }
 
 .flexbox {
-  box-shadow: 4px 4px 6px grey;
-  border-radius: 20px;
-  border: 4px solid black;
+  box-shadow: 4px 4px 6px;
+  border-radius: 13px;
+  border: 4px solid #AFEEEE;
   display: block;
   text-align: center;
   padding: 25px;
@@ -52,32 +53,36 @@ li {
   font-size: 14px;
   color: #e7e7e7;
   font-family: OCR A Std, monospace;
-  // margin-top: 30px;
+  margin-top: 30px;
 }
 
 #Tar {
   font-size: 14px;
-  color: #DAA520;
+  color: #A9A9A9;
   text-decoration: underline;
   font-family: Chalkduster;
 }
 
 #Money {
   font-size: 14px;
-  color: #008000;
+  color: #DAA520;
   font-family: Chalkduster;
 }
 
 #button {
   background-color: #008CBA;
-  border-radius: 30px;
+  border-radius: 20px;
   color: white;
-  padding: 10px 20px;
+  padding: 7px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   margin-bottom: 5px;
+}
+
+#btn {
+  color: black;
 }
 
 h4 {
