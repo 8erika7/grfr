@@ -5,15 +5,19 @@
        <div class='show-picture'>
       <%= cl_image_tag @freegraffer.photo.key, height: 400, width: 800, crop: :fill %>
       </div>
-    </div>
+        <div id=Loca> City available </div>
+        <div id= Ville> <br> Paris,France <br> Barcelona, Spain <br> Milan, Italie <br> Berlin, Germany </div>
+      </div>
     <div class="col-2 offset-1">
       <div class="flexbox">
-<!--         <div id=Loca> Paris,France </div> -->
+        <br>
         <h3> Styles of Graph </h3>
-        <li>Tag</li>
-        <li>Street View</li>
-        <li>Graffiti</li>
+        <li>* Tag</li>
+        <li>* Street View</li>
+        <li>* Graffiti</li>
+        <br>
         <div id=Tar> Tarifs: </div> <div id=Money> <%=@freegraffer.price%>£ /day</div>
+        <br>
         <div class="btn">
           <a href="https://www.lewagon.com/fr" target="_blank" id=button class="btn"> Book me!</a>
           </div>
