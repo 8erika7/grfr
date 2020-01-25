@@ -1,8 +1,10 @@
-<h1>Bookings#new</h1>
-<p>Find me in app/views/bookings/new.html.erb</p>
+<div class='container' style='color: #1EDD88'>
+
+<h1>Give your artist your disponibility !</h1>
 
   <%= simple_form_for [@freegraffer, @booking_info] do |f| %>
   <%= f.input :start_date, as: :string, input_html: { class: "datepicker form-box"}, label: 'Start date', required: true %>
   <%= f.input :end_date, as: :string, input_html: { class: "datepicker form-box"}, label: 'End date', required: true %>
   <%= f.submit "add a book", class: "btn btn-primary" %>
 <% end %>
+</div>
