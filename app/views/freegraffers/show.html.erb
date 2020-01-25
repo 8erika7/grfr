@@ -2,9 +2,11 @@
 
 <div class="container">
   <h1><%= @freegraffer.description %></h1>
-  <h3>Réalisation de graffe'</h3>
-  <p id=Loca> Paris, France </p>
+  <div class='show-picture'>
 <%= cl_image_tag @freegraffer.photo.key, height: 600, width: 1080, crop: :fill %>
+</div>
+  <p id=Loca> Paris, France </p>
+
    <div id=Prix>
       <br/> Tarifs : <%= @freegraffer.price %> £ / day </p>
       <div class="btn">
