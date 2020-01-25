@@ -31,3 +31,12 @@ end
 
 gem 'cloudinary', '~> 1.12.0'
 gem 'dotenv-rails', groups: [:development, :test]
+
+
+source "https://rails-assets.org" do
+gem 'rails-assets-bootstrap-datepicker'
+end
+
+
+gem 'jquery-rails'
+
