@@ -1,11 +1,9 @@
 <p>You book some freegraffers</p>
 
-<%= @booking_infos.to_a %>
+<% @booking_infos.each do |booking_info| %>
+<p><%= booking_info.freegraffer.description %></p>
+<p> <%= booking_info.freegraffer.style %></p>
 
-<% unless @booking_freelances.empty? %>
-
-  <p>You have been booked for </p>
-
-  <%= @booking_freelances.to_a %>
+<p><%= booking_info.start_date %> -<%= booking_info.end_date %>  </p>
 
 <% end %>

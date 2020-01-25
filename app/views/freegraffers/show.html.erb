@@ -19,7 +19,7 @@
         <div id=Tar> Tarifs: </div> <div id=Money> <%=@freegraffer.price%>£ /day</div>
         <br>
         <div class="btn">
-          <a href="https://www.lewagon.com/fr" target="_blank" id=button class="btn"> Book me!</a>
+          <%= link_to "Book me ! ",  new_freegraffer_booking_info_path(@freegraffer), id: "button", class: "btn" %>
           </div>
       </div>
 
