@@ -1,11 +1,12 @@
-<%#= cl_image_tag @freegraffer.photo.key, alt: "alttext" %>
 
 <div class="container">
   <h1><%= @freegraffer.description %></h1>
-  <h3>Réalisation de graffe'</h3>
+  <div class='show-picture'>
+<%= cl_image_tag @freegraffer.photo.key, height: 600, width: 1080, crop: :fill %>
+</div>
   <p id=Loca> Paris, France </p>
-<!--   <img class="img-profil" id=PixProfil src="<%#= @freegraffer.photo %>" alt="">
- -->    <div id=Prix>
+
+   <div id=Prix>
       <br/> Tarifs : <%= @freegraffer.price %> £ / day </p>
       <div class="btn">
         <%= link_to "Book me ! ",  new_freegraffer_booking_info_path(@freegraffer), id: "button", class: "btn" %>
@@ -19,51 +20,3 @@
     <li>Graffiti</li>
   </div>
 
-<%= cl_image_tag @freegraffer.photo.key, height: 300, width: 400, crop: :fill %>
-
-
-<%# @freegraffer.photos.each do |photo| %>
-  <%#= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<%# end %>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--  <div class="banner" style=" width: 100px; height: 100px; background-image: url('<%#=@freegraffer.photo%>')";>
-</div> -->
-
-
-<!--
-        <div class="container">
-          <div class="footer">
-            <h4> Other Pages </h4>
-            <ul><li>
-            <a href="https://www.facebook.com/"target="_blank"><i class="fab fa-facebook-square style-icon"></i>
-            </a>
-            </li>
-              <li>
-                <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram style-icon2"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-  </body>
-</html>
-
- -->

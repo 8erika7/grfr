@@ -1,4 +1,17 @@
-<div class="container ">
+
+
+<div class='container-signup'>
+  <style>
+    .container-signup {
+  width: 500px;
+  margin: 50px;
+  margin-left: 600px;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  color: white;
+    }
+  </style>
   <!-- <div class="row justify-content-center"> -->
 <!--     <h2>Log in</h2>
  -->
@@ -13,18 +26,15 @@
                       required: false,
                       autofocus: true,
                       input_html: { autocomplete: "email" } %>
-          <%= f.input :name,
-                      required: true %>
           <%= f.input :password,
                       required: false,
                       input_html: { autocomplete: "current-password" } %>
           <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
         </div>
      </div>
-        </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "Log in" %>
+          <%= f.button :submit, "Log in", class:"btn btn-primary" %>
         </div>
       <% end %>
 
